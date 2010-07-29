@@ -5,25 +5,35 @@
 
 Gem::Specification.new do |s|
   s.name = %q{devise_ticketable}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Morton Jonuschat"]
-  s.date = %q{2010-07-29}
-  s.description = %q{TODO: longer description of your gem}
+  s.date = %q{2010-07-30}
+  s.description = %q{Adding device_ticketable to your devise implementaton will integrate it with mod_auth_tkt for the Apache HTTP server by setting/destroying the necessary auth_tkt cookie}
   s.email = %q{yabawock@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.md"
   ]
   s.files = [
-    "VERSION"
+    ".gitignore",
+     "LICENSE",
+     "README.md",
+     "Rakefile",
+     "VERSION",
+     "devise_ticketable.gemspec",
+     "lib/devise_ticketable.rb",
+     "lib/devise_ticketable/hooks/ticketable.rb",
+     "lib/devise_ticketable/model.rb",
+     "test/helper.rb",
+     "test/test_devise_ticketable.rb"
   ]
   s.homepage = %q{http://github.com/yabawock/devise_ticketable}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Add support to devise for acting as a SSO server using mod_auth_tkt for apache}
   s.test_files = [
     "test/helper.rb",
      "test/test_devise_ticketable.rb"
