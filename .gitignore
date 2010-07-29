@@ -1,0 +1,12 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+Gemfile.lock
+._*
+.DS_Store
+*~
+.idea/*
+public/stylesheets/compiled/*
+.rvmrc
+public/uploads/**/*
